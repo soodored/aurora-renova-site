@@ -664,3 +664,11 @@ body.nav-open #siteNav{
   .brand img{ height: 34px; }
   .nav__inner{ padding: 12px 0; }
 }
+
+@media (max-width: 980px){
+  .hero__visual{ min-height: 520px; } /* чтобы влезли qcard */
+}
+
+@media (max-width: 420px){
+  .hero__visual{ min-height: 640px; } /* если всё равно тесно */
+}
