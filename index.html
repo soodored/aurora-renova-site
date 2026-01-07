@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="theme-color" content="#070A12"/>
+  <title>AURORA RENOVA — ремонт и отделка в Минск и область</title>
+  <meta name="description" content="AURORA RENOVA: ремонт под ключ, плитка, ламинат, паркет, обои, душевые перегородки из закаленного стекла. Минск и область. Смета и сроки."/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+
+  <header class="nav" id="siteNav">
+    <div class="container nav__inner">
+      <a class="brand" href="#top" data-scroll>
+        <img src="assets/img/logo.svg" alt="AURORA RENOVA"/>
+      </a>
+  
+      <!-- Desktop links -->
+      <nav class="nav__links" aria-label="Навигация">
+        <a href="#services" data-scroll>Услуги</a>
+        <a href="#process" data-scroll>Процесс</a>
+        <a href="#gallery" data-scroll>Фото</a>
+        <a href="#estimate" data-scroll>Оценка</a>
+        <a href="#contacts" data-scroll>Контакты</a>
+      </nav>
+  
+      <!-- Desktop CTA -->
+      <div class="cta">
+        <a class="btn" href="#contacts" data-scroll>Оставить заявку</a>
+        <a class="btn btn--primary" href="tel:+375291234567" aria-label="Позвонить">+375 (29) 123-45-67</a>
+      </div>
+  
+      <!-- Burger (mobile) -->
+      <button
+        class="nav__burger"
+        id="navBurger"
+        type="button"
+        aria-label="Открыть меню"
+        aria-controls="navMobile"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  
+    
+  </header>
+  <!-- Mobile overlay + slide-in panel -->
+  <div class="nav__mobile" id="navMobile" aria-hidden="true">
+    <div class="nav__mobilePanel" role="dialog" aria-label="Мобильное меню">
+      <div class="nav__mobileTop">
+        <div class="nav__mobileTitle">Меню</div>
+        <button class="nav__mobileClose" id="navClose" type="button" aria-label="Закрыть меню">✕</button>
+      </div>
+
+      <div class="nav__mobileLinks" aria-label="Навигация (моб.)">
+        <a href="#services" data-scroll>Услуги</a>
+        <a href="#process" data-scroll>Процесс</a>
+        <a href="#gallery" data-scroll>Фото</a>
+        <a href="#estimate" data-scroll>Оценка</a>
+        <a href="#contacts" data-scroll>Контакты</a>
+      </div>
+
+      <div class="nav__mobileCta">
+        <a class="btn btn--primary" href="tel:+375291234567">Позвонить</a>
+        <a class="btn" href="#contacts" data-scroll>Оставить заявку</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="card hero__copy">
+          <div class="kicker"><span class="dot"></span> Минск и область • выезд на замер • договор • гарантия</div>
+          <h1>Современный ремонт, который приятно принимать.</h1>
+          <p class="lead">
+            AURORA RENOVA — команда, которая делает отделку «как на рендерах» и сдаёт объект без нервов:
+            чистые примыкания, ровные плоскости, аккуратные швы, понятная смета и контроль качества на каждом этапе.
+          </p>
+
+          <div class="hero__badges" aria-label="Преимущества">
+            <div class="badge">Плитка, санузлы, откосы</div>
+            <div class="badge">Ламинат / кварц-винил</div>
+            <div class="badge">Паркет и инженерная доска</div>
+            <div class="badge">Обои, покраска, декор</div>
+            <div class="badge">Стеклянные перегородки</div>
+            <div class="badge">Ремонт под ключ</div>
+          </div>
+
+          <div class="hero__actions">
+            <button class="btn btn--primary" onclick="document.querySelector('#contacts').scrollIntoView({behavior:'smooth'})">Получить смету за 10 минут</button>
+            <button class="btn" onclick="document.querySelector('#estimate').scrollIntoView({behavior:'smooth'})">Посчитать ориентир</button>
+          </div>
+
+          <div class="note">Демо-версия сайта. Замените телефоны, город и почту в <b>index.html</b> (поиск: <i>+375</i> и <i>info@</i>).</div>
+        </div>
+
+        <div class="card hero__visual">
+          <div class="media" aria-hidden="true"></div>
+          <div class="overlay">
+            <div class="quick">
+              <div class="qcard">
+                <div class="qtitle">Сроки и план</div>
+                <div class="qsub">Календарный график + чек-листы качества по этапам.</div>
+                <div class="qpill">Контроль качества</div>
+              </div>
+              <div class="qcard">
+                <div class="qtitle">Прозрачная смета</div>
+                <div class="qsub">Фиксируем объёмы работ, материалы и допуски заранее.</div>
+                <div class="qpill">Без сюрпризов</div>
+              </div>
+              <div class="qcard">
+                <div class="qtitle">Чистый монтаж</div>
+                <div class="qsub">Защита поверхностей, минимум пыли, уборка перед сдачей.</div>
+                <div class="qpill">Аккуратно</div>
+              </div>
+              <div class="qcard">
+                <div class="qtitle">Душевые перегородки</div>
+                <div class="qsub">Закалённое стекло, фурнитура, герметизация и тест.</div>
+                <div class="qpill">Стекло</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Услуги</h2>
+            <p class="subhead">Нажмите на карточку — откроется подробность: что входит, на что обращаем внимание и какие материалы используем.</p>
+          </div>
+          <a class="btn" href="#contacts" data-scroll>Хочу консультацию</a>
+        </div>
+
+        <div id="servicesGrid" class="grid" aria-label="Список услуг"></div>
+      </div>
+    </section>
+
+    <section id="process" class="section">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Процесс без хаоса</h2>
+            <p class="subhead">Понятные шаги, фиксируем договорённости, показываем прогресс. Вы контролируете результат, а не бегаете за исполнителями.</p>
+          </div>
+        </div>
+
+        <div class="grid" aria-label="KPI">
+          <div class="kpi">
+            <div class="kpi__v">1–2 дня</div>
+            <div class="kpi__t">Выезд на замер, первичная смета, согласование состава работ.</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi__v">3 уровня</div>
+            <div class="kpi__t">Косметика / стандарт / премиум. Подбираем под бюджет и задачу.</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi__v">Фотоотчёты</div>
+            <div class="kpi__t">По этапам: скрытые работы, гидроизоляция, уклоны, финиш.</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi__v">Гарантия</div>
+            <div class="kpi__t">Фиксируем гарантийные условия и перечень работ в договоре.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Фото работ</h2>
+            <p class="subhead">Здесь — иллюстративные изображения для шаблона. Замените их на свои реальные фото в папке <b>assets/img</b>.</p>
+          </div>
+        </div>
+
+        <div class="gallery" aria-label="Галерея">
+          <div class="gitem"><img src="assets/img/gallery1.jpg" alt="Санузел: плитка и примыкания"/></div>
+          <div class="gitem"><img src="assets/img/gallery2.jpg" alt="Пол: ламинат, аккуратные стыки"/></div>
+          <div class="gitem"><img src="assets/img/gallery3.jpg" alt="Стекло: душевая перегородка"/></div>
+          <div class="gitem"><img src="assets/img/gallery4.jpg" alt="Ремонт под ключ: финишная отделка"/></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="estimate" class="section">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Быстрый расчёт (ориентир)</h2>
+            <p class="subhead">Это не оферта. Калькулятор нужен, чтобы быстро прикинуть порядок бюджета до замера.</p>
+          </div>
+        </div>
+
+        <div class="split">
+          <div class="form">
+            <form id="estimateForm">
+              <div class="field">
+                <label for="area">Площадь, м²</label>
+                <input id="area" type="number" min="0" step="1" placeholder="Например: 52" />
+              </div>
+              <div class="field">
+                <label for="level">Уровень ремонта</label>
+                <select id="level">
+                  <option value="cosmetic">Косметический</option>
+                  <option value="standard" selected>Стандарт</option>
+                  <option value="premium">Премиум</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Доп. работы</label>
+                <label style="display:flex; gap:10px; align-items:center; font-weight:700; color:rgba(255,255,255,0.85)">
+                  <input type="checkbox" name="extra" value="bath"> Санузел (гидроизоляция, уклоны)
+                </label>
+                <label style="display:flex; gap:10px; align-items:center; font-weight:700; color:rgba(255,255,255,0.85)">
+                  <input type="checkbox" name="extra" value="glass"> Душевая перегородка (стекло)
+                </label>
+                <label style="display:flex; gap:10px; align-items:center; font-weight:700; color:rgba(255,255,255,0.85)">
+                  <input type="checkbox" name="extra" value="design"> Помощь с подбором материалов
+                </label>
+              </div>
+            </form>
+          </div>
+
+          <div class="form">
+            <div class="kicker"><span class="dot"></span> Результат</div>
+            <h3 style="margin:10px 0 8px; font-size:22px; letter-spacing:-0.2px">Ваш ориентир</h3>
+            <div id="estimateOut" style="font-weight:950; font-size:28px; letter-spacing:-0.4px">—</div>
+            <p class="small" style="margin-top:10px">
+              Для точной сметы: замер + описание работ + выбранные материалы.
+              Мы покажем, где можно оптимизировать без потери качества.
+            </p>
+            <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top: 10px">
+              <a class="btn btn--primary" href="#contacts" data-scroll>Запросить точную смету</a>
+              <a class="btn" href="#services" data-scroll>Посмотреть услуги</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contacts" class="section">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Контакты</h2>
+            <p class="subhead">Позвоните или оставьте заявку — ответим и согласуем замер. Работаем: Минск и область.</p>
+          </div>
+        </div>
+
+        <div class="split">
+          <div class="form">
+            <div class="kicker"><span class="dot"></span> Телефоны</div>
+            <div style="margin-top:12px; display:grid; gap:10px">
+              <div class="phone-row">
+                <div>
+                  <div class="p">+375 (29) 123-45-67</div>
+                  <div class="s">Основной номер • звонок/WhatsApp/Telegram</div>
+                </div>
+                <div class="phone-actions">
+                  <a class="iconbtn" href="tel:+375(29)123-45-67" aria-label="Позвонить">📞</a>
+                  <button class="iconbtn" type="button" data-copy="+375 (29) 123-45-67">⧉</button>
+                </div>
+              </div>
+              <div class="phone-row">
+                <div>
+                  <div class="p">+375 (44) 765-43-21</div>
+                  <div class="s">Доп. номер • если занято</div>
+                </div>
+                <div class="phone-actions">
+                  <a class="iconbtn" href="tel:+375(44)765-43-21" aria-label="Позвонить">📞</a>
+                  <button class="iconbtn" type="button" data-copy="+375 (44) 765-43-21">⧉</button>
+                </div>
+              </div>
+            </div>
+
+            <p class="small" style="margin-top:12px">
+              Часы: Пн–Сб 09:00–20:00. Выезд на замер по договоренности.
+            </p>
+          </div>
+
+          <div class="form">
+            <div class="kicker"><span class="dot"></span> Заявка</div>
+            <form id="contactForm" style="margin-top:12px">
+              <div class="field">
+                <label for="c_name">Имя</label>
+                <input id="c_name" type="text" placeholder="Например: Станислав"/>
+              </div>
+              <div class="field">
+                <label for="c_phone">Телефон *</label>
+                <input id="c_phone" type="tel" placeholder="+375 (..) ..-..-.." required/>
+              </div>
+              <div class="field">
+                <label for="c_msg">Что нужно сделать</label>
+                <textarea id="c_msg" placeholder="Квартира 52 м², санузел, ламинат, обои. Нужна смета и сроки."></textarea>
+              </div>
+              <button class="btn btn--primary" type="submit">Отправить</button>
+              <p class="small" style="margin-top:10px">
+                Отправка через почтовый клиент (mailto). Для реальных заявок подключите сервер/форму (например, Telegram bot / CRM / email API).
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="brand__name" style="font-weight:950; font-size:18px">AURORA RENOVA</div>
+        <div class="small" style="margin-top:8px">Ремонт под ключ: от идеи до идеального результата. Плитка, ламинат, паркет, обои, стекло, ремонт под ключ. Работаем в регионе: Минск и область.</div>
+        <div class="small" style="margin-top:10px">© <span id="year"></span> AURORA RENOVA. Все права защищены.</div>
+      </div>
+
+      <div>
+        <div style="font-weight:900; margin-bottom:10px">Навигация</div>
+        <div class="small" style="display:grid; gap:6px">
+          <a href="#services" data-scroll>Услуги</a>
+          <a href="#gallery" data-scroll>Фото работ</a>
+          <a href="#estimate" data-scroll>Быстрый расчёт</a>
+          <a href="#contacts" data-scroll>Контакты</a>
+        </div>
+      </div>
+
+      <div>
+        <div style="font-weight:900; margin-bottom:10px">Контакты</div>
+        <div class="small" style="display:grid; gap:6px">
+          <a href="tel:+375(29)123-45-67">+375 (29) 123-45-67</a>
+          <a href="tel:+375(44)765-43-21">+375 (44) 765-43-21</a>
+          <span>Город: Минск и область</span>
+          <span>Email: info@aurora-renova.example</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky phone drawer -->
+  <div class="sticky-call" aria-label="Быстрый звонок">
+    <button id="fab" class="fab" aria-label="Открыть контакты">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.07 21 3 13.93 3 5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.59a1 1 0 0 1-.25 1.01l-2.2 2.19z"/></svg>
+    </button>
+
+    <div id="drawer" class="drawer" role="dialog" aria-modal="false" aria-label="Контакты">
+      <div class="drawer__head">
+        <div>
+          <div class="drawer__title">Связаться быстро</div>
+          <div class="small" style="margin-top:4px">Нажмите «копировать» или «позвонить».</div>
+        </div>
+        <button id="drawerClose" class="drawer__close" aria-label="Закрыть">✕</button>
+      </div>
+      <div class="drawer__body">
+        <div class="phone-row">
+          <div>
+            <div class="p">+375 (29) 123-45-67</div>
+            <div class="s">Основной</div>
+          </div>
+          <div class="phone-actions">
+            <a class="iconbtn" href="tel:+375(29)123-45-67" aria-label="Позвонить">📞</a>
+            <button class="iconbtn" type="button" data-copy="+375 (29) 123-45-67" aria-label="Копировать номер">⧉</button>
+          </div>
+        </div>
+        <div class="phone-row">
+          <div>
+            <div class="p">+375 (44) 765-43-21</div>
+            <div class="s">Дополнительный</div>
+          </div>
+          <div class="phone-actions">
+            <a class="iconbtn" href="tel:+375(44)765-43-21" aria-label="Позвонить">📞</a>
+            <button class="iconbtn" type="button" data-copy="+375 (44) 765-43-21" aria-label="Копировать номер">⧉</button>
+          </div>
+        </div>
+        <a class="btn btn--primary" href="#contacts" data-scroll style="width:100%; text-align:center; display:block">Оставить заявку</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" aria-label="Окно деталей">
+    <div class="modal__panel">
+      <div class="modal__grid">
+        <div id="modalImg" class="modal__img" style="background-image:url('assets/img/tile.jpg')"></div>
+        <div class="modal__body">
+          <div class="modal__top">
+            <div>
+              <div id="modalTitle" class="modal__h">—</div>
+              <div id="modalText" class="modal__p">—</div>
+            </div>
+            <button id="modalClose" class="modal__x" aria-label="Закрыть">✕</button>
+          </div>
+          <div id="modalList" class="list" aria-label="Список"></div>
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px">
+            <a class="btn btn--primary" href="#contacts" data-scroll>Запросить смету</a>
+            <a class="btn" href="tel:+375(29)123-45-67">Позвонить</a>
+          </div>
+          <p class="small" style="margin-top:10px">Подключим материалы, подскажем по узлам, а затем аккуратно реализуем.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
